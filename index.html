@@ -1,18 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Memory Game</h1>
-    <div class="score-board">
-        <div class="score">Score: <span id="score">0</span></div>
-        <div class="timer">Time: <span id="timer">60</span> sec</div>
+  <header class="header">
+    <h1>🧠 Memory Match</h1>
+    <div class="scoreboard">
+      <div>Score: <span id="score">0</span></div>
+      <div>Lives: <span id="lives">3</span></div>
+      <div>Time: <span id="timer">120</span>s</div>
     </div>
-    <div class="game-board" id="game-board"></div>
-    <script src="script.js"></script>
+  </header>
+
+  <div id="preview-bar" class="preview-bar">
+  <h2 id="preview-message">🧠 Remember the cards!</h2>
+  <p id="preview-timer">Game starts in 10...</p>
+</div>
+
+
+  <main>
+    <div id="game-board" class="game-board"></div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
